@@ -1,0 +1,48 @@
+<SceneConfig>
+    <String tag="scene" value="" />
+    <StringArray tag="scenes" />
+    <Lookup tag="settings">
+        <Boolean tag="axes" value="0" />
+        <Boolean tag="camera_light" value="1" />
+        <Light tag="camera_light_settings">
+            <Integer tag="Type" value="0" />
+            <Vector3 tag="Position" x="0" y="1" z="0" />
+            <Vector3 tag="Direction" x="0" y="-1" z="0" />
+            <Color tag="Diffuse" x="1" y="1" z="1" w="1" />
+            <Color tag="Specular" x="1" y="1" z="1" w="1" />
+            <Real tag="AttenuationRange" value="1000" />
+            <Real tag="AttenuationConstant" value="1" />
+            <Real tag="AttenuationLinear" value="0" />
+            <Real tag="AttenuationQuadric" value="0" />
+            <Real tag="SpotlightInnerAngle" value="0" />
+            <Real tag="SpotlightOuterAngle" value="0.785398" />
+            <Real tag="SpotlightFalloff" value="1" />
+            <Boolean tag="CastShadows" value="0" />
+            <Boolean tag="SpecularEnabled" value="0" />
+        </Light>
+        <Boolean tag="grid" value="0" />
+    </Lookup>
+    <Array tag="objects">
+        <SceneObject>
+            <String tag="name" value="CoM Location" />
+            <String tag="mesh" value="caren.sphere.mesh" />
+            <String tag="material" value="caren.system.magenta" />
+            <Transformation tag="transformation">
+                <Vector3 tag="Translation" x="0" y="0" z="0" />
+                <Quaternion tag="Rotation" x="0" y="0" z="0" w="1" />
+                <Scale tag="Scaling" x="1" y="1" z="1" />
+            </Transformation>
+        </SceneObject>
+        <SceneObject>
+            <String tag="name" value="ReferencePoint" />
+            <String tag="mesh" value="caren.sphere.mesh" />
+            <String tag="material" value="caren.system.blue" />
+            <Transformation tag="transformation">
+                <Vector3 tag="Translation" x="0" y="0" z="0" />
+                <Quaternion tag="Rotation" x="0" y="0" z="0" w="1" />
+                <Scale tag="Scaling" x="1" y="1" z="1" />
+            </Transformation>
+        </SceneObject>
+    </Array>
+    <Array tag="lights" />
+</SceneConfig>
