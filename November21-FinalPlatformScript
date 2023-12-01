@@ -1,0 +1,25 @@
+scaling = inputs.get("plaform.scaling")
+
+function mean(t)
+	sum = 0
+	len = 0
+	for i = 1,#t do
+		if t[i] ~= 0 then
+			sum = sum+t[i]
+			len = len+1
+		end
+	end
+	return sum/len
+end
+
+X = {}
+Z = {}
+for i = 2,inputs.size(),2 do
+	table.insert(X,inputs.get(i))
+	table.insert(Z,inputs.get(i+1))
+end
+
+outputs.set("Platform.RotZ",-20*scaling*mean(X)/100)
+outputs.set("Platform.RotX",20*scaling*mean(Z)/100)
+outputs.set("Position.Z", mean(Z))
+outputs.set("Position.X", mean(X))
