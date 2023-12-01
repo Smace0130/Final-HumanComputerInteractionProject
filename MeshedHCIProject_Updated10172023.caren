@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAREN3Layout version="3.34.3">
+  <Modules>
+    <module id="1" icon="MoCap" x="294" y="276" label="MoCap" title="MoCap"/>
+    <module id="10" icon="Script" x="470" y="292" label="Script" title="Script"/>
+    <module id="3" icon="Parameter" x="566" y="68" label="Parameter" title="Parameter"/>
+    <module id="12" icon="Platform" x="870" y="372" label="Platform" title="Platform"/>
+    <module id="15" icon="Stopwatch" x="358" y="596" label="stable.platform.1&#10;" title="stable.platform.1&#10;"/>
+    <module id="16" icon="Stopwatch" x="438" y="596" label="Stopwatch" title="stable.platform.2&#10;"/>
+    <module id="2" icon="Stopwatch" x="262" y="596" label="Stopwatch" title="Stopwatch"/>
+    <module id="6" icon="Stopwatch" x="534" y="596" label="Stopwatch" title="Stopwatch"/>
+    <module id="17" icon="Stopwatch" x="646" y="500" label="Stopwatch" title="Stopwatch"/>
+    <module id="18" icon="3DText" x="726" y="500" label="3DText" title="3DText"/>
+    <module id="9" icon="Switch" x="390" y="228" label="Switch" title="Switch"/>
+    <module id="4" icon="SelfPacedTreadmill" x="678" y="68" label="SelfPacedTreadmill" title="SelfPacedTreadmill"/>
+    <module id="11" icon="Generator" x="774" y="372" label="Fade In/Out" title="Fade In/Out"/>
+    <module id="20" icon="3DText" x="726" y="612" label="3DText" title="3DText"/>
+    <module id="19" icon="Stopwatch" x="646" y="612" label="Stopwatch" title="Stopwatch"/>
+    <module id="8" icon="Script" x="1062" y="180" label="Script" title="Script"/>
+    <module id="14" icon="Particle" x="1158" y="132" label="Particle" title="Particle"/>
+    <module id="21" icon="SoundPlayer" x="1158" y="212" label="SoundPlayer" title="SoundPlayer"/>
+    <module id="22" icon="Camera" x="966" y="212" label="Camera" title="Camera"/>
+    <module id="7" icon="Object" x="966" y="132" label="Object" title="Object"/>
+    <module id="119" icon="Valuator" x="870" y="500" label="Valuator" title="Valuator"/>
+    <module id="128" icon="3DText" x="1142" y="340" label="3DText" title="3DText"/>
+    <module id="136" icon="3DText" x="262" y="676" label="3DText" title="3DText"/>
+  </Modules>
+  <Connectors>
+    <connector id="23">
+      <Boxes>
+        <box id="24" x="64" y="138"/>
+        <box id="25" x="-80" y="146"/>
+      </Boxes>
+      <Wires>
+        <wire id="26"/>
+        <wire id="27"/>
+        <wire id="28"/>
+        <wire id="29"/>
+        <wire id="30"/>
+        <wire id="31"/>
+        <wire id="32"/>
+        <wire id="33"/>
+        <wire id="34"/>
+        <wire id="35"/>
+        <wire id="36"/>
+        <wire id="37"/>
+        <wire id="38"/>
+        <wire id="39"/>
+        <wire id="40"/>
+        <wire id="41"/>
+      </Wires>
+    </connector>
+    <connector id="67">
+      <Boxes>
+        <box id="68" x="64" y="42"/>
+        <box id="69" x="-80" y="58"/>
+      </Boxes>
+      <Wires>
+        <wire id="70"/>
+        <wire id="71"/>
+      </Wires>
+    </connector>
+    <connector id="42">
+      <Boxes>
+        <box id="43" x="64" y="18"/>
+        <box id="44" x="-80" y="218"/>
+      </Boxes>
+      <Wires>
+        <wire id="45"/>
+      </Wires>
+    </connector>
+    <connector id="46">
+      <Boxes>
+        <box id="47" x="64" y="58"/>
+        <box id="48" x="-80" y="162"/>
+        <box id="49" x="704" y="10"/>
+        <box id="50" x="704" y="26"/>
+        <box id="51" x="704" y="42"/>
+      </Boxes>
+      <Wires>
+        <wire id="52"/>
+        <wire id="53"/>
+        <wire id="54"/>
+        <wire id="55"/>
+        <wire id="56"/>
+        <wire id="57"/>
+        <wire id="58"/>
+      </Wires>
+    </connector>
+    <connector id="59">
+      <Boxes>
+        <box id="60" x="64" y="26"/>
+        <box id="61" x="-80" y="194"/>
+      </Boxes>
+      <Wires>
+        <wire id="62"/>
+      </Wires>
+    </connector>
+    <connector id="63">
+      <Boxes>
+        <box id="64" x="64" y="58"/>
+        <box id="65" x="-80" y="58"/>
+      </Boxes>
+      <Wires>
+        <wire id="66"/>
+      </Wires>
+    </connector>
+    <connector id="72">
+      <Boxes>
+        <box id="73" x="64" y="18"/>
+        <box id="74" x="-80" y="218"/>
+      </Boxes>
+      <Wires>
+        <wire id="75"/>
+      </Wires>
+    </connector>
+    <connector id="76">
+      <Boxes>
+        <box id="77" x="64" y="58"/>
+        <box id="78" x="-80" y="66"/>
+      </Boxes>
+      <Wires>
+        <wire id="79"/>
+        <wire id="80"/>
+      </Wires>
+    </connector>
+    <connector id="81">
+      <Boxes>
+        <box id="82" x="64" y="82"/>
+        <box id="83" x="-80" y="58"/>
+      </Boxes>
+      <Wires>
+        <wire id="84"/>
+        <wire id="85"/>
+      </Wires>
+    </connector>
+    <connector id="86">
+      <Boxes>
+        <box id="87" x="64" y="90"/>
+        <box id="88" x="-80" y="18"/>
+      </Boxes>
+      <Wires>
+        <wire id="89"/>
+      </Wires>
+    </connector>
+    <connector id="90">
+      <Boxes>
+        <box id="91" x="64" y="18"/>
+        <box id="92" x="-80" y="58"/>
+      </Boxes>
+      <Wires>
+        <wire id="93"/>
+      </Wires>
+    </connector>
+    <connector id="94">
+      <Boxes>
+        <box id="95" x="64" y="58"/>
+        <box id="96" x="-80" y="58"/>
+      </Boxes>
+      <Wires>
+        <wire id="97"/>
+        <wire id="98"/>
+      </Wires>
+    </connector>
+    <connector id="99">
+      <Boxes>
+        <box id="100" x="64" y="58"/>
+        <box id="101" x="-80" y="130"/>
+      </Boxes>
+      <Wires>
+        <wire id="102"/>
+        <wire id="103"/>
+        <wire id="104"/>
+      </Wires>
+    </connector>
+    <connector id="120">
+      <Boxes>
+        <box id="121" x="69" y="58"/>
+        <box id="122" x="1669" y="130"/>
+      </Boxes>
+      <Wires>
+        <wire id="123"/>
+        <wire id="124"/>
+      </Wires>
+    </connector>
+    <connector id="137">
+      <Boxes>
+        <box id="138" x="65" y="18"/>
+        <box id="139" x="1473" y="218"/>
+      </Boxes>
+      <Wires>
+        <wire id="140"/>
+      </Wires>
+    </connector>
+    <connector id="147">
+      <Boxes>
+        <box id="148" x="69" y="18"/>
+        <box id="149" x="1669" y="186"/>
+        <box id="158" x="781" y="26"/>
+      </Boxes>
+      <Wires>
+        <wire id="159"/>
+        <wire id="160"/>
+      </Wires>
+    </connector>
+  </Connectors>
+  <Groups>
+    <group title="Fade In and Fade Out Safety Mech." description="You will need to modify this when you change the time. You will do (Time - 3 Seconds) for everything to time up well. " color="140" x="766" y="76" w="80" h="368">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="11"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Overall Timer" description="Timer to control start and stop of all the modules. Begins sequence." color="136" x="254" y="444" w="80" h="224">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="2"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Perturbation Timer" description="Times out how long the platform delivers the perturbations. " color="76" x="526" y="460" w="80" h="208">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="6"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Platform Mechanism" description="In this module we are feeding in 26 markers, Vicon Plug-In Gait Model with Trunk. However, this module will only be outputting the necessary 8 markers that are needed for the platform scaling. The switch allows us to control what is being inputted into the script. " color="136" x="286" y="92" w="256" h="272">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="1"/>
+          <UnsignedInt value="10"/>
+          <UnsignedInt value="9"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Score Visual" description="" color="136" x="1134" y="300" w="80" h="112">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="128"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Stable Platform Timers" description="Timers that tell the switch module to feed in 0 for no platform movement or to gather average marker placement and create purturbations. " color="60" x="350" y="460" w="160" h="208">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="15"/>
+          <UnsignedInt value="16"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Trial Countdown - Beginning" description="" color="152" x="638" y="460" w="160" h="112">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="17"/>
+          <UnsignedInt value="18"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="Trial Countdown - End" description="" color="60" x="638" y="572" w="160" h="112">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="20"/>
+          <UnsignedInt value="19"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+    <group title="User Interface Component" description="" color="136" x="958" y="108" w="272" h="176">
+      <modules>
+        <UnsignedIntArray>
+          <UnsignedInt value="8"/>
+          <UnsignedInt value="14"/>
+          <UnsignedInt value="21"/>
+          <UnsignedInt value="22"/>
+          <UnsignedInt value="7"/>
+        </UnsignedIntArray>
+      </modules>
+    </group>
+  </Groups>
+  <Editor x="254" y="1230"/>
+</CAREN3Layout>
