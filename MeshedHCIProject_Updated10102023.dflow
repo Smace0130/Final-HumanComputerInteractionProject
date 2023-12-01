@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Caren2Project id="0" ApplicationVersion="118" ConsoleWidth="320" ConsoleShowDeviceConnections="true" ProjectFolder="C:\CAREN Resources\Projects\HCI Project" version="3.34.3">
+  <Documentation id="0" Description="" Instructions="" Changes="" Authors="" Organization="" UUID="" Date="20221101"/>
+  <FrameControl id="0" ViewerMax="60" IGMax="60" DFlowMin="30" DFlowMax="300" UseViewerMax="true" UseIGMax="false" UseDFlowMin="false" UseDFlowMax="true"/>
+  <SystemState id="0" HighPerformanceMode="false"/>
+  <InputOutput>
+    <Tab id="0" name="Default" color="39"/>
+    <Parameter param_type="4" tab="0" id="0" name="Length + Objects + Start" came="Settings + Start" width="3"/>
+    <Parameter param_type="0" tab="0" id="0" name="Time1" came="Time (Seconds)" width="3" value="60" min="0" max="600" step="60" default="0"/>
+    <Parameter param_type="0" tab="0" id="0" name="# of Objects" came="# of Objects" width="3" value="10" min="0" max="100" step="1" default="0"/>
+    <Parameter param_type="1" tab="0" id="0" name="Object Size" came="Object Size" width="3" value="0" default="0">
+      <item_names>
+        <StringArray>
+          <String value="Small"/>
+          <String value="Medium"/>
+          <String value="Large"/>
+          <String value="X-Large"/>
+          <String value="XX_Large"/>
+        </StringArray>
+      </item_names>
+      <item_values>
+        <RealArray>
+          <Real value="0.15"/>
+          <Real value="0.25"/>
+          <Real value="0.35"/>
+          <Real value="0.45"/>
+          <Real value="0.55"/>
+        </RealArray>
+      </item_values>
+    </Parameter>
+    <Parameter param_type="1" tab="0" id="0" name="CoM Size" came="CoM Size" width="3" value="1" default="3">
+      <item_names>
+        <StringArray>
+          <String value="Small"/>
+          <String value="Medium"/>
+          <String value="Large"/>
+          <String value="X-Large"/>
+        </StringArray>
+      </item_names>
+      <item_values>
+        <RealArray>
+          <Real value="0.5"/>
+          <Real value="1"/>
+          <Real value="2"/>
+          <Real value="3"/>
+        </RealArray>
+      </item_values>
+    </Parameter>
+    <Parameter param_type="3" tab="0" id="0" name="trial.start" came="Start" width="3" value="trial.start"/>
+    <Parameter param_type="4" tab="0" id="0" name="Parameters" came="Parameters" width="3"/>
+    <Parameter param_type="0" tab="0" id="0" name="platform.scaling" came="Platform Scaling (%)" width="3" value="0" min="0" max="200" step="5" default="0"/>
+    <Parameter param_type="0" tab="0" id="0" name="treadmill.speed" came="Treadmill Speed" width="3" value="0" min="0" max="2" step="0.05" default="0"/>
+    <Parameter param_type="4" tab="0" id="0" name="Information" came="Information" width="3"/>
+    <Parameter param_type="5" tab="0" id="0" name="Time" came="Time" width="3" DisplayAsTime="true" Precision="0"/>
+    <Parameter param_type="5" tab="0" id="0" name="Score" came="Score" width="3" DisplayAsTime="false" Precision="0"/>
+    <EnableSubjectTab enable="0"/>
+    <EnableMessages enable="0"/>
+    <EnableAction enable="1"/>
+    <EnableResetParameters enable="1"/>
+    <EnableProjectFolder enable="0"/>
+    <EnableCalibrate enable="1"/>
+  </InputOutput>
+  <Events>
+    <event id="Play"/>
+    <event id="Stop"/>
+    <event id="Reset"/>
+    <event id="Calibrate"/>
+    <event id="Action"/>
+    <event id="BOOM"/>
+    <event id="perturbing.platform"/>
+    <event id="stable.platform.1"/>
+    <event id="stable.platform.2"/>
+    <event id="stop.showing.countdown"/>
+    <event id="trial.start"/>
+  </Events>
+  <Modules>
+    <module id="1" type="MoCap" title="MoCap">
+      <event_mapping event="Record" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="3"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" Source="0" MinimumForce="0" SimulateSinglePlate="false" SimulateSingleForcePlate="false" ApplyStaticInertiaCompensationOnForcePlates="false" InertiaCompensationType="0" ShowChildModel="false" HBMOutputAbsoluteForces="false" AutoUpdateWeight="true" Mesh="12_skeletonman" PropagateTransformation="false" FileFormat="0" OutputFile="" InputFile="" LoopPlayBack="false" UseUnique="true" WriteOutputChannelsOnly="false" WriteHighFreqChannels="false" WaitForNewFrame="false" UseOutputFilter="false" OutputFilterFreq="10" UseFileFilter="false" FileFilterFreq="10" UseEMGOutputFilter="false" EMGOutputFilterFreq="10" VMBEnabled="false" VMBArmsMode="0" VMBLegsMode="0" VMBMode="0" VMBDelay="0.5" VMBShowMirrorPlanes="false" ShowCaptureVolume="false">
+        <Configuration id="0" Flags="6" VST="" LabeledMarkers="8" LabeledSegments="0" UnlabeledChannels="8" ForcePlates="2" AnalogChannels="64" LabeledMode="0" OutputChannels="101101101101101101101101">
+          <EMGChannels>
+            <EMGMuscleAssignments>
+              <EMGChannelMapping index="0" type="NONE"/>
+              <EMGChannelMapping index="1" type="NONE"/>
+              <EMGChannelMapping index="2" type="NONE"/>
+              <EMGChannelMapping index="3" type="NONE"/>
+              <EMGChannelMapping index="4" type="NONE"/>
+              <EMGChannelMapping index="5" type="NONE"/>
+              <EMGChannelMapping index="6" type="NONE"/>
+              <EMGChannelMapping index="7" type="NONE"/>
+              <EMGChannelMapping index="8" type="NONE"/>
+              <EMGChannelMapping index="9" type="NONE"/>
+              <EMGChannelMapping index="10" type="NONE"/>
+              <EMGChannelMapping index="11" type="NONE"/>
+              <EMGChannelMapping index="12" type="NONE"/>
+              <EMGChannelMapping index="13" type="NONE"/>
+              <EMGChannelMapping index="14" type="NONE"/>
+              <EMGChannelMapping index="15" type="NONE"/>
+            </EMGMuscleAssignments>
+          </EMGChannels>
+          <AnalogSettings>
+            <AnalogSettings>
+              <Channel label="Channel 1" outputEnabled="false"/>
+              <Channel label="Channel 2" outputEnabled="false"/>
+              <Channel label="Channel 3" outputEnabled="false"/>
+              <Channel label="Channel 4" outputEnabled="false"/>
+              <Channel label="Channel 5" outputEnabled="false"/>
+              <Channel label="Channel 6" outputEnabled="false"/>
+              <Channel label="Channel 7" outputEnabled="false"/>
+              <Channel label="Channel 8" outputEnabled="false"/>
+              <Channel label="Channel 9" outputEnabled="false"/>
+              <Channel label="Channel 10" outputEnabled="false"/>
+              <Channel label="Channel 11" outputEnabled="false"/>
+              <Channel label="Channel 12" outputEnabled="false"/>
+              <Channel label="Channel 13" outputEnabled="false"/>
+              <Channel label="Channel 14" outputEnabled="false"/>
+              <Channel label="Channel 15" outputEnabled="false"/>
+              <Channel label="Channel 16" outputEnabled="false"/>
+              <Channel label="Channel 17" outputEnabled="false"/>
+              <Channel label="Channel 18" outputEnabled="false"/>
+              <Channel label="Channel 19" outputEnabled="false"/>
+              <Channel label="Channel 20" outputEnabled="false"/>
+              <Channel label="Channel 21" outputEnabled="false"/>
+              <Channel label="Channel 22" outputEnabled="false"/>
+              <Channel label="Channel 23" outputEnabled="false"/>
+              <Channel label="Channel 24" outputEnabled="false"/>
+              <Channel label="Channel 25" outputEnabled="false"/>
+              <Channel label="Channel 26" outputEnabled="false"/>
+              <Channel label="Channel 27" outputEnabled="false"/>
+              <Channel label="Channel 28" outputEnabled="false"/>
+              <Channel label="Channel 29" outputEnabled="false"/>
+              <Channel label="Channel 30" outputEnabled="false"/>
+              <Channel label="Channel 31" outputEnabled="false"/>
+              <Channel label="Channel 32" outputEnabled="false"/>
+              <Channel label="Channel 33" outputEnabled="false"/>
+              <Channel label="Channel 34" outputEnabled="false"/>
+              <Channel label="Channel 35" outputEnabled="false"/>
+              <Channel label="Channel 36" outputEnabled="false"/>
+              <Channel label="Channel 37" outputEnabled="false"/>
+              <Channel label="Channel 38" outputEnabled="false"/>
+              <Channel label="Channel 39" outputEnabled="false"/>
+              <Channel label="Channel 40" outputEnabled="false"/>
+              <Channel label="Channel 41" outputEnabled="false"/>
+              <Channel label="Channel 42" outputEnabled="false"/>
+              <Channel label="Channel 43" outputEnabled="false"/>
+              <Channel label="Channel 44" outputEnabled="false"/>
+              <Channel label="Channel 45" outputEnabled="false"/>
+              <Channel label="Channel 46" outputEnabled="false"/>
+              <Channel label="Channel 47" outputEnabled="false"/>
+              <Channel label="Channel 48" outputEnabled="false"/>
+              <Channel label="Channel 49" outputEnabled="false"/>
+              <Channel label="Channel 50" outputEnabled="false"/>
+              <Channel label="Channel 51" outputEnabled="false"/>
+              <Channel label="Channel 52" outputEnabled="false"/>
+              <Channel label="Channel 53" outputEnabled="false"/>
+              <Channel label="Channel 54" outputEnabled="false"/>
+              <Channel label="Channel 55" outputEnabled="false"/>
+              <Channel label="Channel 56" outputEnabled="false"/>
+              <Channel label="Channel 57" outputEnabled="false"/>
+              <Channel label="Channel 58" outputEnabled="false"/>
+              <Channel label="Channel 59" outputEnabled="false"/>
+              <Channel label="Channel 60" outputEnabled="false"/>
+              <Channel label="Channel 61" outputEnabled="false"/>
+              <Channel label="Channel 62" outputEnabled="false"/>
+              <Channel label="Channel 63" outputEnabled="false"/>
+              <Channel label="Channel 64" outputEnabled="false"/>
+              <ForcePlateFilterFrequency value="15"/>
+            </AnalogSettings>
+          </AnalogSettings>
+        </Configuration>
+        <ForcePlateBonte id="0" MinimumForce="0.1" UseCrossTalkMatrix="true" ForcePlateMode="0"/>
+        <HBMSubjectInfo id="0" MarkerDiameter="0.014" FilterFreq="6"/>
+        <MarkerVisualization id="0" ShowMarkers="false" ShowMarkerLabels="false" MarkerScale="0.04"/>
+        <SkeletonVisualization id="0" SphereSize="0.06" CylinderSize="0.03" ShowSkeleton="false" ShowLabels="false"/>
+        <MeshVisualization id="0" Show="false" ApplyRotationsOnly="false" LocalOrientations="false" SkeletonVisible="false" SkeletonVisualizationScale="1"/>
+        <ForceVisualization id="0" MinimumForce="0" ScaleFactor="0.01" ArrowDiameter="0.05" Show="false"/>
+        <HMBSkelVisualization id="0" InactiveR="0.75" InactiveG="0" InactiveB="0" InactiveA="1" IntermediateR="0" IntermediateG="0.75" IntermediateB="0" IntermediateA="1" ActiveR="1" ActiveG="1" ActiveB="1" ActiveA="1" ColorSensitivity="1" show="false" showMuscleForces="true" showSkeleton="false" showMoments="false"/>
+        <Sorter id="0" mode="1" nb="8" sort_x="0" sort_y="0" sort_z="0" template=""/>
+        <GrailConfig id="0" OutputFileGrail="%DATA%\.mox" GrailProcessingEnabled="false" GrailVideoEnabled="false" OutputChannelsEnabled="false" UseUniqueOutputName="true" OutputStepParameters="true" OutputEMGParameters="true" OutputKineParameters="true" OutputMomentParameters="true" OutputPowerParameters="true" DisableStepProcessingWhenThreadmillNotMoving="true" NormalizeMomentsAndPowersOnBodyMass="false" LeftHSEvent="&lt;NONE&gt;" LeftTOEvent="&lt;NONE&gt;" RightHSEvent="&lt;NONE&gt;" RightTOEvent="&lt;NONE&gt;" StepDetectionAlgorithm="0"/>
+        <HBMConfig id="0" AllowMissingMarkers="false" CalculateMuscleForces="false"/>
+      </data>
+    </module>
+    <module id="2" type="Stopwatch" title="Stopwatch">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="5"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" start="-10" count_down="false" use_real_time="false" eventtrigger="true" eventtarget="0" eventname="stable.platform.1"/>
+    </module>
+    <module id="3" type="Parameter" title="Parameter">
+      <data id="0"/>
+    </module>
+    <module id="4" type="SelfPacedTreadmill" title="SelfPacedTreadmill">
+      <event_mapping event="Reset" action="3"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" LinkSpeeds="true" OutputTargetSpeed="true" AutoStopSelfPaced="true">
+        <TreadmillSingle id="0" MaxAcceleration="0.25" MaxSpeed="2" MinSpeed="0" HighPerformanceMode="false"/>
+        <TreadmillDual id="0" MaxAcceleration="0.25" MaxSpeed="2" MinSpeed="0" HighPerformanceMode="false"/>
+        <SelfPacedController id="0" Sensitivity="1" UseNew="false" AdjustTreadmillCenterPosOnCal="true"/>
+      </data>
+    </module>
+    <module id="5" type="Graph" title="Graph">
+      <data id="0"/>
+    </module>
+    <module id="6" type="Stopwatch" title="Stopwatch">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="5"/>
+      <event_mapping event="perturbing.platform" action="1"/>
+      <event_mapping event="stable.platform.2" action="5"/>
+      <data id="0" start="300" count_down="true" use_real_time="false" eventtrigger="true" eventtarget="0" eventname="stable.platform.2"/>
+    </module>
+    <module id="7" type="Object" title="Object" obj0="CoM Location">
+      <event_mapping event="Reset" action="3"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" PosX="0" PosY="0" PosZ="0" Local="false" RotX="0" RotY="0" RotZ="0" ScaleX="0.2" ScaleY="0.2" ScaleZ="0.2" ScaleAll="true" R="1" G="0" B="1" A="1" UseCustomMaterial="false" EditMaterial="false" Show="true" Loop="false" AbsoluteAnimationPath="false" UseAbsoluteTransform="false" ConstrainY="false" MultiConstrain="false" MultiConstrainDist="1" IsTerrain="false" AnimationSpeed="1" AnimationOffset="0" MeshAnimationSpeed="1" LinkMeshAnimationSpeed="true" EntityAnim="" PathAnim="" Attach="false" AutoHide="false" UseObjectIDMask="false">
+        <CastShadows>
+          <Boolean value="0"/>
+        </CastShadows>
+        <ReceiveShadows>
+          <Boolean value="1"/>
+        </ReceiveShadows>
+      </data>
+    </module>
+    <module id="8" type="Script" title="Script">
+      <event_mapping event="Action" action="6"/>
+      <event_mapping event="Calibrate" action="5"/>
+      <event_mapping event="Reset" action="3"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="perturbing.platform" action="1"/>
+      <event_mapping event="trial.start" action="0"/>
+      <data id="0" script="t = t or 0&#10;t = t + framedelta()&#10;&#10;function dist(x1,z1,x2,z2)&#10;&#9;return math.sqrt((x2-x1)^2 + (z2-z1)^2)&#9;&#10;end&#10;&#10;function boom(i) &#10;&#9;broadcast(&quot;BOOM&quot;,&quot;Position&quot;,unpack(obj[i]:getposition()))&#10;&#9;obj[i]:destroy()&#10;&#9;table.remove(obj,i)&#10;end&#10;&#10;j = inputs.get(&quot;ObjectNumber&quot;)&#10;g = inputs.get(&quot;ObjectSize&quot;)&#10;&#10;obj = obj or {}&#10;if not init then &#10;&#9;colors = {&quot;Green&quot;}&#10;&#9;for i = 1,j do&#10;&#9;&#9;local color = colors[math.random(1, #colors)]&#10;&#9;&#9;table.insert(obj, object.create(&quot;Sphere&quot;,color,&quot;White Sphere&quot;))&#10;  &#9;&#9;--node.setposition (obj[i], math.random(-1000, 1000)/100, 0, math.random(-1000,1000)/100)&#10;&#9;&#9;obj[i]:setposition(math.random(-40,40)/100, 0, math.random(-80,80)/100)&#10;&#9;&#9;--obj[i]:setposition((i/3), 0, i/3-.5)&#10;&#9;&#9;--obj[i]:setposition(math.random(-15,15)/100, 0, math.random(-15,15)/100)&#10;&#9;&#9;obj[i]:setscaling(g,g,g)&#10;&#9;end&#10;&#9;init = true&#10;end&#10;&#10;x = inputs.get(&quot;PosX&quot;)  &#10;z = inputs.get(&quot;PosZ&quot;)&#10;i=1&#10;&#10;&#10;while i &lt;= #obj do&#10;&#9;obj_xz = obj[i]:getposition()&#10;&#9;dists = dist(x,z,obj_xz[1],obj_xz[3])&#10;&#9;--dists = dist(x,0,obj_xz[1],0)&#10;&#9;--dists = dist(0,z,0,obj_xz[3])&#10;&#9;print(obj_xz[3])&#10;&#9;if dists &lt; 0.05 then&#10;&#9;&#9;boom(i)&#10;&#9;end&#10;i = i + 1&#10;end&#10;" collisions="false">
+        <inputs>
+          <StringArray>
+            <String value="PosX"/>
+            <String value="PosY"/>
+            <String value="PosZ"/>
+            <String value="ObjectNumber"/>
+            <String value="ObjectSize"/>
+            <String value="Input6"/>
+          </StringArray>
+        </inputs>
+        <outputs>
+          <StringArray>
+            <String value="Output1"/>
+            <String value="Output2"/>
+            <String value="Output3"/>
+            <String value="Output4"/>
+            <String value="Output5"/>
+            <String value="Output6"/>
+          </StringArray>
+        </outputs>
+      </data>
+    </module>
+    <module id="9" type="Switch" title="Switch">
+      <event_mapping event="perturbing.platform" action="4"/>
+      <event_mapping event="stable.platform.1" action="2"/>
+      <event_mapping event="stable.platform.2" action="3"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" Mode="0">
+        <ChannelsPerSet>
+          <Integer value="1"/>
+        </ChannelsPerSet>
+        <Sets>
+          <Integer value="18"/>
+        </Sets>
+        <ActiveSet>
+          <Integer value="4"/>
+        </ActiveSet>
+      </data>
+    </module>
+    <module id="10" type="Script" title="Script">
+      <event_mapping event="Action" action="6"/>
+      <event_mapping event="Calibrate" action="5"/>
+      <event_mapping event="Reset" action="3"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" script="scaling = inputs.get(&quot;plaform.scaling&quot;)&#10;&#10;function mean(t)&#10;&#9;sum = 0&#10;&#9;len = 0&#10;&#9;for i = 1,#t do&#10;&#9;&#9;if t[i] ~= 0 then&#10;&#9;&#9;&#9;sum = sum+t[i]&#10;&#9;&#9;&#9;len = len+1&#10;&#9;&#9;end&#10;&#9;end&#10;&#9;return sum/len&#10;end&#10;&#10;X = {}&#10;Z = {}&#10;for i = 2,inputs.size(),2 do&#10;&#9;table.insert(X,inputs.get(i))&#10;&#9;table.insert(Z,inputs.get(i+1))&#10;end&#10;&#10;outputs.set(&quot;Platform.RotZ&quot;,-20*scaling*mean(X)/100)&#10;outputs.set(&quot;Platform.RotX&quot;,20*scaling*mean(Z)/100)&#10;outputs.set(&quot;Position.Z&quot;, mean(Z))&#10;outputs.set(&quot;Position.X&quot;, mean(X))" collisions="false">
+        <inputs>
+          <StringArray>
+            <String value="plaform.scaling"/>
+            <String value="C7.PosX"/>
+            <String value="C7.PosZ"/>
+            <String value="T10.PosX"/>
+            <String value="T10.PosZ"/>
+            <String value="JN.PosX"/>
+            <String value="JN.PosZ"/>
+            <String value="XIPH.PosX"/>
+            <String value="XIPH.PosZ"/>
+            <String value="LASIS.PosX"/>
+            <String value="LASIS.PosZ"/>
+            <String value="RASIS.PosX"/>
+            <String value="RASIS.PosZ"/>
+            <String value="LPSIS.PosX"/>
+            <String value="LPSIS.PosZ"/>
+            <String value="RPSIS.PosX"/>
+            <String value="RPSIS.PosZ"/>
+          </StringArray>
+        </inputs>
+        <outputs>
+          <StringArray>
+            <String value="Platform.RotX"/>
+            <String value="Platform.RotZ"/>
+            <String value="Position.X"/>
+            <String value="Position.Z"/>
+          </StringArray>
+        </outputs>
+      </data>
+    </module>
+    <module id="11" type="Generator" title="Fade In/Out">
+      <event_mapping event="Pause" action="3"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" c1="I1" c2="I2" c3="" c4="" c5="" c6="" label1="Channel1" label2="Channel2" label3="Channel3" label4="Channel4" label5="Channel5" label6="Channel6" freq="60" ps="10 3 57 3"/>
+    </module>
+    <module id="12" type="Platform" title="Platform">
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" ShowPlatform="false" ShowActual="true" Safety="true" FilterFreq="2.5" Manual="false" FixYaw="false" Factor="1" GUIWidth="336" GUIHeight="721"/>
+    </module>
+    <module id="13" type="Graph" title="Graph">
+      <data id="0"/>
+    </module>
+    <module id="14" type="Particle" title="Particle">
+      <event_mapping event="BOOM" action="1"/>
+      <event_mapping event="Stop" action="2"/>
+      <data id="0" ParticleSystem="CAREN-Sparkles" Link="false" PosX="0" PosY="0" PosZ="0" RotX="0" RotY="0" RotZ="0"/>
+    </module>
+    <module id="15" type="Stopwatch" title="stable.platform.1&#10;">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="5"/>
+      <event_mapping event="perturbing.platform" action="5"/>
+      <event_mapping event="stable.platform.1" action="0"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" start="10" count_down="true" use_real_time="false" eventtrigger="true" eventtarget="0" eventname="perturbing.platform"/>
+    </module>
+    <module id="16" type="Stopwatch" title="stable.platform.2&#10;">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="5"/>
+      <event_mapping event="stable.platform.2" action="1"/>
+      <data id="0" start="5" count_down="true" use_real_time="false" eventtrigger="true" eventtarget="0" eventname="Stop"/>
+    </module>
+    <module id="17" type="Stopwatch" title="Stopwatch">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="3"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" start="10" count_down="true" use_real_time="false" eventtrigger="true" eventtarget="0" eventname="stop.showing.countdown"/>
+    </module>
+    <module id="18" type="3DText" title="3DText">
+      <event_mapping event="stop.showing.countdown" action="2"/>
+      <event_mapping event="trial.start" action="1"/>
+      <data id="0" UseEventText="false" Local="false" RealText="Starting in...&#10;&lt;v1&gt;" MaxRefreshRate="0.2" Link="true">
+        <Position>
+          <Vector3 x="0" y="0" z="-2"/>
+        </Position>
+        <Rotation>
+          <Vector3 x="0" y="0" z="0"/>
+        </Rotation>
+        <Scale>
+          <Vector3 x="0.62" y="0.62" z="0.186"/>
+        </Scale>
+        <TextVisualizer id="0" Text="Starting in...&#10;-22" Font="arialbd.ttf" Align="1" Use3D="false" UseScreenSpace="false" ScreenSpaceX="0" ScreenSpaceY="0" CastShadows="false" Visible="false">
+          <Color>
+            <Color x="1" y="1" z="1" w="1"/>
+          </Color>
+        </TextVisualizer>
+      </data>
+    </module>
+    <module id="19" type="Stopwatch" title="Stopwatch">
+      <event_mapping event="Pause" action="2"/>
+      <event_mapping event="Reset" action="4"/>
+      <event_mapping event="Stop" action="5"/>
+      <event_mapping event="stable.platform.2" action="1"/>
+      <data id="0" start="5" count_down="true" use_real_time="false" eventtrigger="false" eventtarget="0" eventname="&lt;NONE&gt;"/>
+    </module>
+    <module id="20" type="3DText" title="3DText">
+      <event_mapping event="Reset" action="2"/>
+      <event_mapping event="Stop" action="2"/>
+      <event_mapping event="stable.platform.2" action="1"/>
+      <data id="0" UseEventText="false" Local="false" RealText="Stopping in...&#10;&lt;v1&gt;" MaxRefreshRate="0.2" Link="true">
+        <Position>
+          <Vector3 x="0" y="0" z="-2"/>
+        </Position>
+        <Rotation>
+          <Vector3 x="0" y="0" z="0"/>
+        </Rotation>
+        <Scale>
+          <Vector3 x="0.62" y="0.62" z="0.3"/>
+        </Scale>
+        <TextVisualizer id="0" Text="Stopping in...&#10;5" Font="arialbd.ttf" Align="1" Use3D="false" UseScreenSpace="false" ScreenSpaceX="0" ScreenSpaceY="0" CastShadows="false" Visible="false">
+          <Color>
+            <Color x="1" y="1" z="1" w="1"/>
+          </Color>
+        </TextVisualizer>
+      </data>
+    </module>
+    <module id="21" type="SoundPlayer" title="SoundPlayer">
+      <event_mapping event="BOOM" action="1"/>
+      <event_mapping event="Stop" action="0"/>
+      <data id="0" Gain="100" Pitch="0" PosX="0" PosY="0" PosZ="0" sound="%SOUNDS%\MM Road\explosions1a.wav" loop="0" relative="false"/>
+    </module>
+    <module id="22" type="Camera" title="Camera">
+      <data id="0" PosX="0" PosY="0" PosZ="3.5" LocalTrans="true" RotX="-90" RotY="0" RotZ="0" Near="0.1" Far="1000" FOV="73.74" Active="true" OrthoWindowWidth="5">
+        <EgoMotion>
+          <Boolean value="0"/>
+        </EgoMotion>
+        <Orthographic>
+          <Boolean value="0"/>
+        </Orthographic>
+      </data>
+    </module>
+  </Modules>
+  <Connectors>
+    <connector id="23" src="1" trg="10" src_box="24" trg_box="25">
+      <Boxes/>
+      <Wires>
+        <wire id="26" src="24" src_idx="2" trg="25" trg_idx="3"/>
+        <wire id="27" src="24" src_idx="3" trg="25" trg_idx="4"/>
+        <wire id="28" src="24" src_idx="6" trg="25" trg_idx="7"/>
+        <wire id="29" src="24" src_idx="7" trg="25" trg_idx="8"/>
+        <wire id="30" src="24" src_idx="8" trg="25" trg_idx="9"/>
+        <wire id="31" src="24" src_idx="9" trg="25" trg_idx="10"/>
+        <wire id="32" src="24" src_idx="10" trg="25" trg_idx="11"/>
+        <wire id="33" src="24" src_idx="11" trg="25" trg_idx="12"/>
+        <wire id="34" src="24" src_idx="14" trg="25" trg_idx="13"/>
+        <wire id="35" src="24" src_idx="15" trg="25" trg_idx="14"/>
+        <wire id="36" src="24" src_idx="12" trg="25" trg_idx="15"/>
+        <wire id="37" src="24" src_idx="13" trg="25" trg_idx="16"/>
+        <wire id="38" src="24" src_idx="0" trg="25" trg_idx="1"/>
+        <wire id="39" src="24" src_idx="1" trg="25" trg_idx="2"/>
+        <wire id="40" src="24" src_idx="4" trg="25" trg_idx="5"/>
+        <wire id="41" src="24" src_idx="5" trg="25" trg_idx="6"/>
+      </Wires>
+    </connector>
+    <connector id="42" src="17" trg="18" src_box="43" trg_box="44">
+      <Boxes/>
+      <Wires>
+        <wire id="45" src="43" src_idx="0" trg="44" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="46" src="3" trg="9" src_box="47" trg_box="48">
+      <Boxes>
+        <box id="49" type="1" exp="I1*0" inputs="1"/>
+        <box id="50" type="1" exp="I1*0" inputs="1"/>
+        <box id="51" type="1" exp="I1*0" inputs="1"/>
+      </Boxes>
+      <Wires>
+        <wire id="52" src="47" src_idx="4" trg="49" trg_idx="0"/>
+        <wire id="53" src="49" src_idx="0" trg="48" trg_idx="1"/>
+        <wire id="54" src="47" src_idx="4" trg="50" trg_idx="0"/>
+        <wire id="55" src="50" src_idx="0" trg="48" trg_idx="2"/>
+        <wire id="56" src="47" src_idx="4" trg="51" trg_idx="0"/>
+        <wire id="57" src="51" src_idx="0" trg="48" trg_idx="3"/>
+        <wire id="58" src="47" src_idx="4" trg="48" trg_idx="4"/>
+      </Wires>
+    </connector>
+    <connector id="59" src="9" trg="10" src_box="60" trg_box="61">
+      <Boxes/>
+      <Wires>
+        <wire id="62" src="60" src_idx="1" trg="61" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="63" src="3" trg="4" src_box="64" trg_box="65">
+      <Boxes/>
+      <Wires>
+        <wire id="66" src="64" src_idx="5" trg="65" trg_idx="2"/>
+      </Wires>
+    </connector>
+    <connector id="67" src="10" trg="11" src_box="68" trg_box="69">
+      <Boxes/>
+      <Wires>
+        <wire id="70" src="68" src_idx="0" trg="69" trg_idx="0"/>
+        <wire id="71" src="68" src_idx="1" trg="69" trg_idx="1"/>
+      </Wires>
+    </connector>
+    <connector id="72" src="19" trg="20" src_box="73" trg_box="74">
+      <Boxes/>
+      <Wires>
+        <wire id="75" src="73" src_idx="0" trg="74" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="76" src="11" trg="12" src_box="77" trg_box="78">
+      <Boxes/>
+      <Wires>
+        <wire id="79" src="77" src_idx="0" trg="78" trg_idx="3"/>
+        <wire id="80" src="77" src_idx="1" trg="78" trg_idx="5"/>
+      </Wires>
+    </connector>
+    <connector id="81" src="7" trg="8" src_box="82" trg_box="83">
+      <Boxes/>
+      <Wires>
+        <wire id="84" src="82" src_idx="0" trg="83" trg_idx="0"/>
+        <wire id="85" src="82" src_idx="2" trg="83" trg_idx="2"/>
+      </Wires>
+    </connector>
+    <connector id="86" src="3" trg="6" src_box="87" trg_box="88">
+      <Boxes/>
+      <Wires>
+        <wire id="89" src="87" src_idx="0" trg="88" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="90" src="2" trg="3" src_box="91" trg_box="92">
+      <Boxes/>
+      <Wires>
+        <wire id="93" src="91" src_idx="0" trg="92" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="94" src="3" trg="8" src_box="95" trg_box="96">
+      <Boxes/>
+      <Wires>
+        <wire id="97" src="95" src_idx="1" trg="96" trg_idx="3"/>
+        <wire id="98" src="95" src_idx="2" trg="96" trg_idx="4"/>
+      </Wires>
+    </connector>
+    <connector id="99" src="3" trg="7" src_box="100" trg_box="101">
+      <Boxes/>
+      <Wires>
+        <wire id="102" src="100" src_idx="3" trg="101" trg_idx="6"/>
+        <wire id="103" src="100" src_idx="3" trg="101" trg_idx="7"/>
+        <wire id="104" src="100" src_idx="3" trg="101" trg_idx="8"/>
+      </Wires>
+    </connector>
+    <connector id="105" src="12" trg="13" src_box="106" trg_box="107">
+      <Boxes/>
+      <Wires>
+        <wire id="108" src="106" src_idx="3" trg="107" trg_idx="0"/>
+        <wire id="109" src="106" src_idx="5" trg="107" trg_idx="1"/>
+      </Wires>
+    </connector>
+    <connector id="110" src="4" trg="5" src_box="111" trg_box="112">
+      <Boxes/>
+      <Wires>
+        <wire id="113" src="111" src_idx="2" trg="112" trg_idx="0"/>
+      </Wires>
+    </connector>
+    <connector id="125" src="10" trg="7" src_box="126" trg_box="127">
+      <Boxes/>
+      <Wires>
+        <wire id="130" src="126" src_idx="2" trg="127" trg_idx="0"/>
+        <wire id="131" src="126" src_idx="3" trg="127" trg_idx="2"/>
+      </Wires>
+    </connector>
+  </Connectors>
+</Caren2Project>
