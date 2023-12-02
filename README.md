@@ -3,7 +3,6 @@
 To view progress made on a week-by-week basis for the HCI project, view the branches as they are associated with the .dflow, .caren, .sceneconfigure, and scripts that were developed to acheive the final product that was used for usability testing. 
 
 File type definitions:
-
 ~ .dflow files are associated with the software used to create the interactions amongst modules that allowed for the integration of hardware in one software. 
 ~ .caren files are associated with the code needed to have the CAREN hardware (treadmill, platform, etc.) perform the way we needed it to for this project. 
 ~ .sceneconfigure files are associated with the virtual scene that was displayed to the user. 
