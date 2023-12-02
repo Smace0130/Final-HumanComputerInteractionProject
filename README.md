@@ -1,4 +1,4 @@
-# Final-HumanComputerInteractionProjectFall2023
+# Human Computer Interaction Project - Fall 2023
 
 To view progress made on a week-by-week basis for the HCI project, view the branches as they are associated with the .dflow, .caren, .sceneconfigure, and scripts that were developed to acheive the final product that was used for usability testing. 
 
