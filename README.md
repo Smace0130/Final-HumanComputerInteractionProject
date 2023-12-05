@@ -1,6 +1,6 @@
 # Human Computer Interaction Project - Fall 2023
 
-To view progress made on a week-by-week basis for the HCI project, view the branches as they are associated with the .dflow, .caren, .sceneconfigure, and scripts that were developed to acheive the final product that was used for usability testing. 
+To view progress made on a week-by-week basis for the HCI project, view the branches as they are associated with the .dflow, .caren, .sceneconfigure, and scripts that were developed to acheive the final product that was used for usability testing. Since the DFlow computer is not attached to the network, this repository served as a "snapshot" in time of the progress that was made on a week-by-week basis.  
 
 File type definitions:
 ~ .dflow files are associated with the software used to create the interactions amongst modules that allowed for the integration of hardware in one software. 
